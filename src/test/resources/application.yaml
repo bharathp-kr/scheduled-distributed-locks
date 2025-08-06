@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: distributed-locking
+  data:
+    redis:
+      host: host
+      port: 8080
+      ssl:
+        enabled: true
+      password: test-key
+
+app:
+  schedule:
+    distributed-lock:
+      enable: true

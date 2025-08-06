@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: distributed-locking
+  data:
+    redis:
+      host: ${REDIS_HOST}
+      port: ${REDIS_PORT}
+      ssl:
+        enabled: true
+      password: ${REDIS_KEY}
+
+app:
+  schedule:
+    distributed-lock:
+      enable: true
